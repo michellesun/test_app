@@ -30,6 +30,7 @@ GEM
       multi_json (~> 1.0)
     addressable (2.2.8)
     arel (3.0.2)
+    bootstrap-sass (2.0.0)
     builder (3.0.0)
     capybara (1.1.2)
       mime-types (>= 1.16)
@@ -40,6 +41,7 @@ GEM
       xpath (~> 0.1.4)
     childprocess (0.3.2)
       ffi (~> 1.0.6)
+    chunky_png (1.2.5)
     coffee-rails (3.2.0)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0.beta)
@@ -47,11 +49,18 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.3.1)
+    compass (0.12.1)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+    compass-rails (1.0.1)
+      compass (~> 0.12.0)
     diff-lcs (1.1.3)
     erubis (2.7.0)
     execjs (1.3.1)
       multi_json (~> 1.0)
     ffi (1.0.11)
+    fssm (0.2.9)
     growl (1.0.3)
     guard (1.0.2)
       ffi (>= 0.5.0)
@@ -152,8 +161,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass (= 2.0.0)
   capybara (= 1.1.2)
   coffee-rails (= 3.2.0)
+  compass-rails
   growl (= 1.0.3)
   guard-rspec (= 0.5.5)
   guard-spork (= 0.3.2)
@@ -164,5 +175,6 @@ DEPENDENCIES
   rspec-rails (= 2.9.0)
   sass-rails (= 3.2.4)
   spork (= 0.9.0)
+  sprockets (~> 2.0)
   sqlite3 (= 1.3.5)
   uglifier (= 1.2.3)
